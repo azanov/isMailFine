@@ -38,4 +38,4 @@ if($.isValidEmail('дядя_вася@деревня.рф', true)) {
 
 ### Tests
 
-A few tests can be found here: http://jsfiddle.net/eL2tq8oq/3/
+A few tests can be found here: http://jsfiddle.net/eL2tq8oq/4/
