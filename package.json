@@ -1,0 +1,28 @@
+{
+  "name": "jquery.placeholder",
+  "version": "0.1.0",
+  "description": "Useful placeholder for text input and textarea.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GC92/jquery.placeholder"
+  },
+  "keywords": [
+    "placeholder",
+    "hint"
+  ],
+  "author": "GC92",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GC92/jquery.placeholder/issues"
+  },
+  "homepage": "https://github.com/GC92/jquery.placeholder",
+  "dependencies": {
+    "gulp": "^3.8.5",
+    "gulp-jscs": "^1.1.2",
+    "gulp-jshint": "^1.8.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^3.0.1",
+    "jshint-stylish": "^0.4.0"
+  }
+}
