@@ -13,3 +13,7 @@ if($.isValidEmail('test@example.com')) {
 	// Cool! I'm valid!
 }
 ```
+
+### Tests
+
+A few tests can be found here: http://jsfiddle.net/eL2tq8oq/2/
