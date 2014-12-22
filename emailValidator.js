@@ -26,15 +26,15 @@
 // Translated to JS for CSSSR (http://csssr.ru)
 // by Pavel Azanov <pavel@azanov.de>
 //
-(function (factory) {
+(function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
-		define(['jquery'], factory);
+		define([], factory);
 	} else if (typeof exports === 'object') {
-		factory(require('jquery'));
+		module.exports = factory();
 	} else {
-		factory(jQuery);
+		(root.jQuery || root).isValidEmail = factory();
 	}
-}(function ($) {
+}(this, function () {
 	'use strict';
 
 	// Based on https://github.com/jstedfast/EmailValidation
@@ -305,7 +305,7 @@
 
 	};
 
-	$.isValidEmail = function(email, allowInternational) {
+	return function(email, allowInternational) {
 		return (new EmailValidator()).validate(email, allowInternational);
 	};
 
