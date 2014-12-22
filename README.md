@@ -9,10 +9,19 @@ Usage
 ### API
 
 ```javascript
+
+// global
+isValidEmail(
+	email, // the email address to check
+	allowInternational // true/false, will allow international addresses (e.g cyrillic or chinese)
+);
+
+// Or with jQuery
 $.isValidEmail(
 	email, // the email address to check
 	allowInternational // true/false, will allow international addresses (e.g cyrillic or chinese)
 );
+
 ```
 
 ### Quickstart:
