@@ -5,7 +5,10 @@ var
 	rename = require('gulp-rename'),
 	jscs = require('gulp-jscs'),
 	jshint = require('gulp-jshint'),
-	stylish = require('jshint-stylish');
+	stylish = require('jshint-stylish'),
+	mocha = require('gulp-mocha');
+
+require('mocha-clean');
 
 gulp.task('uglify', function () {
 	gulp.src(['emailValidator.js'])
@@ -33,8 +36,19 @@ gulp.task('watch', function () {
 	gulp.watch('emailValidator.js', ['default']);
 });
 
+gulp.task('test', function () {
+	return gulp.src('./tests/*.js', { read: false })
+		.pipe(
+			mocha({
+				reporter: 'nyan',
+				debug: false
+			})
+		)
+});
+
 gulp.task('default', [
 	'uglify',
 	'jscs',
-	'jshint'
+	'jshint',
+	'test'
 ]);

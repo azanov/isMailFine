@@ -1,21 +1,22 @@
 {
-  "name": "jquery.placeholder",
+  "name": "emailValidator",
   "version": "0.1.0",
-  "description": "Useful placeholder for text input and textarea.",
+  "description": "A simple (but correct) library for validating email addresses. Supports mail addresses as defined in rfc5322 as well as the new Internationalized Mail Address standards (rfc653x)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GC92/jquery.placeholder"
+    "url": "https://github.com/azanov/emailValidator"
   },
   "keywords": [
-    "placeholder",
-    "hint"
+    "email",
+    "mail",
+    "validation"
   ],
-  "author": "GC92",
+  "author": "Jeffrey Stedfast, Pavel Azanov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GC92/jquery.placeholder/issues"
+    "url": "https://github.com/azanov/emailValidator/issues"
   },
-  "homepage": "https://github.com/GC92/jquery.placeholder",
+  "homepage": "https://github.com/azanov/emailValidator",
   "dependencies": {
     "gulp": "^3.8.5",
     "gulp-jscs": "^1.1.2",
@@ -24,5 +25,11 @@
     "gulp-uglify": "^0.3.1",
     "gulp-util": "^3.0.1",
     "jshint-stylish": "^0.4.0"
+  },
+  "devDependencies": {
+    "gulp-mocha": "^2.0.0",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.1.0",
+    "mocha-clean": "^0.4.0"
   }
 }
