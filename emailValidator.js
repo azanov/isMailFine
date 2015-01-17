@@ -27,14 +27,18 @@
 // by Pavel Azanov <pavel@azanov.de>
 //
 (function (root, factory) {
+	var host = root.jQuery || root;
+
 	if (typeof define === 'function' && define.amd) {
-		define([], factory);
+		define([], function() {
+			host.isValidEmail = factory(host);
+		});
 	} else if (typeof exports === 'object') {
-		module.exports = factory();
+		module.exports = factory(host);
 	} else {
-		(root.jQuery || root).isValidEmail = factory();
+		host.isValidEmail = factory(host);
 	}
-}(this, function () {
+}(this, function (host) {
 	'use strict';
 
 	// Based on https://github.com/jstedfast/EmailValidation
@@ -250,6 +254,15 @@
 
 		if (email.length === 0) {
 			return false;
+		}
+
+		if(host.emailValidator) {
+			if(host.emailValidator.allowedCharactersPattern && !email.match(host.emailValidator.allowedCharactersPattern)) {
+				return false;
+			}
+			if(host.emailValidator.filterPattern && !email.match(host.emailValidator.filterPattern)) {
+				return false;
+			}
 		}
 
 		if (!this.skipWord(email, allowInternational) || this.index >= email.length) {

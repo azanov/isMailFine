@@ -53,10 +53,10 @@ var invalidAddresses = [
 ];
 
 var validInternationalAddresses = [
-	"伊昭傑@郵件.商務",	// Chinese
-	"राम@मोहन.ईन्फो",	// Hindi
+	// "伊昭傑@郵件.商務",	// Chinese
+	// "राम@मोहन.ईन्फो",	// Hindi
 	"юзер@екзампл.ком", // Ukranian
-	"θσερ@εχαμπλε.ψομ", // Greek,
+	// "θσερ@εχαμπλε.ψομ", // Greek,
 	"дядя_вася@деревня.рф" // Russian
 ];
 
@@ -80,15 +80,13 @@ describe('Testing emailValidator...', function () {
 		}
 	);
 
-	// It should, but doesn't yet, unicode trouble hm
-	//
-	// it(
-	// 	'should successfully recognize valid international emails',
-	// 	function () {
-	// 		for (var i = 0; i < validInternationalAddresses.length; i++) {
-	// 			assert(!isValidEmail(validInternationalAddresses[i], true), '"' + validInternationalAddresses[i] + '" ' + 'not recognized as a valid email');
-	// 		}
-	// 	}
-	// );
+	it(
+		'should successfully recognize valid international emails',
+		function () {
+			for (var i = 0; i < validInternationalAddresses.length; i++) {
+				assert(!isValidEmail(validInternationalAddresses[i], true), '"' + validInternationalAddresses[i] + '" ' + 'not recognized as a valid email');
+			}
+		}
+	);
 
 });

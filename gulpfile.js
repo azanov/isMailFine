@@ -37,6 +37,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('test', function () {
+
 	return gulp.src('./tests/*.js', { read: false })
 		.pipe(
 			mocha({
