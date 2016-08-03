@@ -4,11 +4,11 @@ isMailFine
 A simple (but correct) library for validating email addresses. Supports mail addresses as defined in rfc5322 as well as the new Internationalized Mail Address standards (rfc653x). Based on https://github.com/jstedfast/EmailValidation
 
 ```
-npm i jquery.csssr.validation
+npm i is-mail-fine
 ```
 
 ```
-bower i jquery.csssr.validation
+bower i is-mail-fine
 ```
 
 Usage
