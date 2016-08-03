@@ -22,7 +22,7 @@ gulp.task('uglify', function() {
   gulp.src('dist/index.js')
     .pipe(uglify())
     .pipe(rename(function (path) {
-		path.basename = "emailValidator.min";
+		path.basename = "isMailFine.min";
 		return path;
 	}))
     .pipe(gulp.dest('dist'))
@@ -31,7 +31,7 @@ gulp.task('uglify', function() {
 // Configs for all tasks
 // Comments are just examples how to add posible configurations to the tasks
 const rollupConf = {
-  entry: 'src/emailValidator.js',
+  entry: 'src/isMailFine.js',
   plugins: [
     nodeResolve({ jsnext: true }),
     babel(),
@@ -44,7 +44,7 @@ const rollupConf = {
 //CommonJS, suitable for Node and Browserify/Webpack format
 const umdBundleConf = {
   format: 'umd',
-  moduleName: 'isValidEmail',
+  moduleName: 'isMailFine',
   dest: 'dist/index.js'
 }
 

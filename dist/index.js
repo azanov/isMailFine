@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global.isValidEmail = factory());
+  (global.isMailFine = factory());
 }(this, function () { 'use strict';
 
   var classCallCheck = function (instance, Constructor) {
@@ -379,7 +379,7 @@
   // order of paramaters changed for compatibility
 
 
-  function emailValidator (email) {
+  function isMailFine (email) {
   	var allowInternational = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
   	var allowTopLevelDomains = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
 
@@ -387,6 +387,6 @@
   	return vld.validate(email, allowTopLevelDomains, allowInternational);
   }
 
-  return emailValidator;
+  return isMailFine;
 
 }));

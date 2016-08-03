@@ -1,6 +1,6 @@
 {
   "name": "is-mail-fine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "description": "A simple (but correct) library for validating email addresses. Supports mail addresses as defined in rfc5322 as well as the new Internationalized Mail Address standards (rfc653x)",
   "repository": {
