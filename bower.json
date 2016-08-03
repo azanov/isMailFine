@@ -1,7 +1,7 @@
 {
   "name": "is-mail-fine",
   "main": "dist/index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/azanov/emailValidator",
   "authors": [
     "Pavel Azanov <pavel@azanov.de>",
