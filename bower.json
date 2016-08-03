@@ -1,5 +1,5 @@
 {
-  "name": "is-valid-email",
+  "name": "is-mail-fine",
   "main": "dist/index.js",
   "version": "1.0.0",
   "homepage": "https://github.com/azanov/emailValidator",
