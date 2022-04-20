@@ -1,14 +1,20 @@
 {
   "name": "@3cx/is-mail-fine",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "dist/index.js",
+  "module": "src/isMailFine.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./src/isMailFine.js"
+  },
   "description": "A simple (but correct) library for validating email addresses. Supports mail addresses as defined in rfc5322 as well as the new Internationalized Mail Address standards (rfc653x)",
   "repository": {
     "type": "git",
     "url": "https://github.com/3cx/isMailFine"
   },
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "src/isMailFine.js"
   ],
   "keywords": [
     "email",

@@ -14,7 +14,7 @@ Usage
 
 ```javascript
 
-import isMailFine from 'is-mail-fine';
+import { isMailFine } from 'is-mail-fine';
 
 // global
 isMailFine(

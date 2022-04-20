@@ -400,7 +400,7 @@ class EmailValidator {
 }
 
 // order of paramaters changed for compatibility
-export default function (email, allowInternational = false, allowTopLevelDomains = false) {
+export function isMailFine(email, allowInternational = false, allowTopLevelDomains = false) {
 	const vld = new EmailValidator();
 	return vld.validate(email, allowTopLevelDomains, allowInternational);
 }
