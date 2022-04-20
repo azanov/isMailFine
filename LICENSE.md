@@ -21,3 +21,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Translated to JS for CSSSR (http://csssr.ru)
 by Pavel Azanov <pavel@azanov.de>
+
+Actualized JS for 3CX (https://3cx.com)
+by Nikolai Orekhov <nick.orekhov@gmail.com>
