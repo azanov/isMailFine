@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import isMailFine from "./src/isMailFine.js";
+import { isMailFine } from "./src/isMailFine.js";
 
 const ValidAddresses = [
     "\"Abc\\@def\"@example.com",
